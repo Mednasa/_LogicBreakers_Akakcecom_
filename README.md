@@ -28,9 +28,13 @@ JUnit (for test execution and assertions)
 Getting Started
 
 To run the tests locally, follow these steps:
+
 Clone this repository to your local machine.
+
 Make sure you have Java and Maven installed
+
 Configure your Selenium WebDriver according to your browser preferences (ChromeDriver, GeckoDriver, etc.)
+
 Navigate to the project directory and run mvn test to execute the tests.
 
 CONTRIBUTORS: https://github.com/Mednasa https://github.com/NigarAylaOzcanan https://github.com/Artam22  https://github.com/0AhmetKaya0 https://github.com/beyzanurer https://github.com/SeymaNur44
