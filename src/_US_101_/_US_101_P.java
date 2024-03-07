@@ -68,5 +68,6 @@ public class _US_101_P extends BaseDriver {
         WebElement dogrulama=driver.findElement(By.xpath("//*[text()='John']"));
         wait.until(ExpectedConditions.textToBe(By.xpath("//*[text()='John']"),"John"));
         Assert.assertTrue("Başarılı Giriş",dogrulama.getText().contains("John"));
+        WaintandClose();
     }
 }

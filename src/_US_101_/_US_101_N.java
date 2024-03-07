@@ -69,5 +69,6 @@ public class _US_101_N extends BaseDriver {
         WebElement verification=driver.findElement(By.xpath("//div[@class='alertX t2']//p"));
         wait.until(ExpectedConditions.textToBe(By.xpath("//div[@class='alertX t2']//p"),"Şifreler aynı olmalı."));
         Assert.assertTrue("Başarılı Giriş",verification.getText().contains("Şifreler aynı olmalı."));
+        WaintandClose();
     }
 }
