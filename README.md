@@ -20,8 +20,11 @@ Message Box Check: Users should be able to log in and check their message box to
 Account Deletion: Users should be able to delete their accounts when logged in to protect personal data.
 
 Technologies and Tools Used
+
 Java
+
 Selenium WebDriver
+
 JUnit (for test execution and assertions)
 
 
