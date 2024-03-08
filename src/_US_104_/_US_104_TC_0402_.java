@@ -42,10 +42,19 @@ public class _US_104_TC_0402_ extends BaseDriver {
         //LOGIN WITH WRONG PASSWORD
         driver.switchTo().newWindow(WindowType.TAB);
         driver.get("https://www.akakce.com/");
-        wait.until(ExpectedConditions.elementToBeClickable(log_inPageBtn));
-        log_inPageBtn.click();
-        emailPlc.sendKeys("licide642@aersm.com");
-        passwordPlc.sendKeys("wrongPassword123");
+
+        WebElement log_inPageBtn2 = driver.findElement(By.cssSelector("div > a[href=\"/akakcem/giris/\"]"));
+        wait.until(ExpectedConditions.elementToBeClickable(log_inPageBtn2));
+        log_inPageBtn2.click();
+
+        WebElement emailPlc2 = driver.findElement(By.xpath("//input[@type=\"email\" and @id=\"life\"]"));
+        emailPlc2.sendKeys("licidew642@aersm.com");
+
+        WebElement passwordPlc2 = driver.findElement(By.xpath("//input[@type=\"password\" and @id=\"lifp\"]"));
+        passwordPlc2.sendKeys("wrongPassword123");
+
+        WebElement loginBtn2 = driver.findElement(By.id("lfb"));
+        loginBtn2.click();
 
         WebElement passwordAlert = driver.findElement(By.xpath("//div[@class=\"alertX t2\"]"));
         wait.until(ExpectedConditions.visibilityOf(passwordAlert));
